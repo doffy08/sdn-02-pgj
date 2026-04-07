@@ -5,15 +5,13 @@
             <div class="row">
 
             <div class="col-lg-6 col-md-6 footer-contact">
-                <h4>SD Negeri Kebonagung</h3>
-                <p>Jl. Raya Jatibarang – Sitanggal Km.04 <br>
-                Kebonagung, Jatibarang <br>
-                Brebes, Jawa Tengah <br>
-                Indonesia
-                <br>
+                <h4>SD Negeri 02 Pagojengan</h3>
+                <p>Dukuh Waru -Kel. Pagojengan Kec. Paguyangan, Kab. Brebes,<br>
+                 Prov. Jawa Tengah <br>
+                 Indonesia <br>
                 <br>
                 {{-- <strong>Phone:</strong> <br> --}}
-                <strong>Email:</strong> sdkebonagung29@gmail.com<br>
+                <strong>Email:</strong> sdnpagojengan02@gmail.com<br>
                 </p>
             </div>
 
@@ -24,6 +22,8 @@
                 <li><i class="bx bx-chevron-right"></i> <a href="{{ route('vision') }}">Tentang SD</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="{{ route('staff') }}">Pengajar</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="{{ route('news') }}">Berita</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="{{ route('fasilitas') }}">Fasilitas</a></li>
+
                 </ul>
             </div>
 
@@ -54,7 +54,7 @@
 
         <div class="me-md-auto text-center text-md-start">
             <div class="copyright">
-                Copyright © 2022 - <strong>SDN Kebonagung</strong>
+                Copyright © 2026 - <strong>SDN 02 Pagojengan</strong>
             </div>
             <div class="credits">
             <!-- All the links in the footer should remain intact. -->

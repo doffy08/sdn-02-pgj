@@ -26,7 +26,7 @@
                                 <img src="{{ asset('storage/' . $leader->image) }}" class="card-img-top">
                             {{-- </div> --}}
                             @else
-                            <img src="{{ asset('assets/img/no-profile.png') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/img/Triyono.jpeg') }}" class="img-fluid" alt="">
                             @endif
                             {{-- <img src="{{ asset('storage/' . $leader->image) }}" class="card-img-top"> --}}
                             <div class="member-content">

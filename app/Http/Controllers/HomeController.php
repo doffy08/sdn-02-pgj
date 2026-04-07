@@ -42,4 +42,23 @@ class HomeController extends Controller
     {
         return view('landing-page.vision');
     }
+
+
+    public function prestasi()
+    {
+        return view('landing-page.prestasi');
+    }
+    public function fasilitas()
+    {
+        return view('landing-page.fasilitas');
+    }
+    
+    public function ekstrakulikuler()
+    {
+        return view('landing-page.ekstrakulikuler');
+    }
+    public function galeri()
+    {
+        return view('landing-page.galeri');
+    }
 }

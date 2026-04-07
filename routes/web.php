@@ -26,6 +26,10 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/news', 'news')->name('news');
     Route::get('/staff', 'staff')->name('staff');
     Route::get('/vision', 'vision')->name('vision');
+    Route::get('/prestasi', 'prestasi')->name('prestasi');
+    Route::get('/fasilitas', 'fasilitas')->name('fasilitas');
+    Route::get('/ekstrakulikuler', 'ekstrakulikuler')->name('ekstrakulikuler');
+    Route::get('/galeri', 'galeri')->name('galeri');
     Route::get('/news/{post:slug}', 'showNews')->name('news.show');
 });
 
