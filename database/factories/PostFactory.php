@@ -14,12 +14,12 @@ class PostFactory extends Factory
     public function definition()
     {
         return [
-            'title' => $this->faker->sentence(mt_rand(3,6)),
+            'title' => $this->faker->sentence(mt_rand(3, 6)),
             'slug' => $this->faker->slug(),
+            'category' => $this->faker->word(),
             'excerpt' => $this->faker->paragraph(),
-            'body' => '<p>' . implode('<p></p>', $this->faker->paragraphs(mt_rand(3,6))) . '</p>',
-            'user_id' => mt_rand(1,10),
-            'category_id' => mt_rand(1,2)
+            'body' => '<p>' . implode('<p></p>', $this->faker->paragraphs(mt_rand(3, 6))) . '</p>',
+            'user_id' => mt_rand(1, 10),
         ];
     }
 }
