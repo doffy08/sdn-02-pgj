@@ -1,11 +1,11 @@
 @extends('layouts.base')
-@section('title', 'SDN Kebonagung')
+@section('title', 'SDN 02 Pagojengan')
 
 @section('content')
 <section id="hero" class="d-flex justify-content-center align-items-center">
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
-        <h1>Sekolah Dasar<br>Negeri Kebonagung</h1>
-        <h2>Jl. Raya Jatibarang – Sitanggal Km.04, Kebonagung, Jatibarang, <br>Brebes, Jawa Tengah</h2>
+        <h1>Sekolah Dasar<br>Negeri 02 Pagojengan</h1>
+        <h2>Dukuh Waru, Kel. Pagojengan, Kec. Paguyangan, <br>Kab. Brebes, Jawa Tengah</h2>
         <a href="{{ route('vision') }}" class="btn-get-started">Tentang Sekolah</a>
     </div>
 </section>
@@ -18,7 +18,7 @@
 
             <div class="row">
             <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-                <img src="{{ asset('assets/img/about-img.jpg') }}" class="img-fluid" alt="">
+                <img src="{{ asset('assets/img/haldep.jpg') }}" class="img-fluid" alt="">
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
                 <h3 class="mb-4">Visi & Misi Sekolah</h3>

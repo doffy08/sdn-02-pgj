@@ -30,7 +30,11 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/fasilitas', 'fasilitas')->name('fasilitas');
     Route::get('/ekstrakulikuler', 'ekstrakulikuler')->name('ekstrakulikuler');
     Route::get('/galeri', 'galeri')->name('galeri');
+    Route::get('/sambutanks', 'sambutanks')->name('sambutanks');
+    Route::get('/sejarah', 'sejarah')->name('sejarah');
+    Route::get('/struktur-organisasi', 'struktur_organisasi')->name('struktur_organisasi');
     Route::get('/news/{post:slug}', 'showNews')->name('news.show');
+    
 });
 
 Route::controller(LoginController::class)->group(function () {

@@ -61,4 +61,19 @@ class HomeController extends Controller
     {
         return view('landing-page.galeri');
     }
+    
+    public function sambutanks()
+    {
+        return view('landing-page.sambutanks');
+    }
+
+     public function sejarah()
+    {
+        return view('landing-page.sejarah');
+    }
+
+     public function struktur_organisasi()
+    {
+        return view('landing-page.struktur-organisasi');
+    }
 }

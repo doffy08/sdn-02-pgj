@@ -10,11 +10,11 @@
             <li><a class="{{ Request::is('/') ? 'active' : '' }}" href="/">Beranda</a></li>
            <li class="dropdown"><a href="#"><span>Profile</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
+              <li><a class="{{ Request::is('sambutanks') ? 'active' : '' }}" href="/sambutanks">Sambutan Kepala Sekolah</a></li>
               <li><a class="{{ Request::is('staff') ? 'active' : '' }}" href="/staff">Pengajar</a></li>
-              <li><a href="#">Sejarah</a></li>
-              <li><a href="#">Visi Misi</a></li>
-              <li><a href="#">Struktur Organisasi</a></li>
-              <li><a class="{{ Request::is('vision') ? 'active' : '' }}" href="/vision">Tentang SD</a></li>
+              <li><a class="{{ Request::is('sejarah') ? 'active' : '' }}" href="/sejarah">Sejarah</a></li>
+              <li><a class="{{ Request::is('vision') ? 'active' : '' }}" href="/vision">Visi Dan Misi</a></li>
+              <li><a class="{{ Request::is('struktur-organisasi') ? 'active' : '' }}" href="/struktur-organisasi">Struktur Organisasi</a></li>
             </ul>
           </li>
 

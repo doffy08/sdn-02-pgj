@@ -1,11 +1,11 @@
 @extends('layouts.base')
 
-@section('title', 'Fasilitas | SDN 02 Pagojengan')
+@section('title', 'Sambutan Kepala Sekolah | SDN Kebonagung')
 
 @section('content')
 <main id="main" data-aos="fade-in">
 
-    <h1>Perpustakann</h1>
+    <h1>Sambutan Kepala Sekolah</h1>
 
 </main>
 @endsection

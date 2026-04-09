@@ -55,7 +55,7 @@
                 </form>
 
                 <div class="text-center mt-5 text-small">
-                Copyright &copy; Your Company. Made with 💙 by Farkan
+                Copyright &copy; SDN 02 Pagojengan
                 <div class="mt-2">
                     <a href="#">Privacy Policy</a>
                     <div class="bullet"></div>
