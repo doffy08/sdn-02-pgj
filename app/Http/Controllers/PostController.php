@@ -30,13 +30,12 @@ class PostController extends Controller
     {
         $validated = $request->validate([
             'title' => ['required', 'max:255'],
-            'category_id' => ['required'],
+            'category' => ['required'],
             'image_post' => ['image', 'file', 'max:1024'],
             'body' => ['required']
         ]);
-        
-        if($request->file('image_post'))
-        {
+
+        if ($request->file('image_post')) {
             $validated['image_post'] = $request->file('image_post')->store('post-images');
         }
 
@@ -45,7 +44,7 @@ class PostController extends Controller
         $validated['excerpt'] = Str::limit(strip_tags($request->body), 200);
 
         Post::create($validated);
-        
+
         $request->session()->flash('success', 'Post Created Successfully!');
 
         return redirect('/dashboard/post');
@@ -55,7 +54,7 @@ class PostController extends Controller
     {
         return view('dashboard.post.edit', [
             'post' => $post,
-            'categories' => Category::all()
+            // 'categories' => Category::all()
         ]);
     }
 
@@ -63,14 +62,13 @@ class PostController extends Controller
     {
         $validated = $request->validate([
             'title' => ['required', 'max:255'],
-            'category_id' => ['required'],
+            'category' => ['required'],
             'image_post' => ['image', 'file', 'max:1024'],
             'body' => ['required']
         ]);
 
-        if($request->file('image_post'))
-        {
-            if($request->oldImage) {
+        if ($request->file('image_post')) {
+            if ($request->oldImage) {
                 Storage::delete($request->oldImage);
             }
             $validated['image_post'] = $request->file('image_post')->store('post-images');
@@ -82,13 +80,13 @@ class PostController extends Controller
 
         Post::where('id', $post->id)
             ->update($validated);
-        
+
         return redirect('/dashboard/post')->with('success', 'Post has been updated!');
     }
 
     public function destroy(Post $post)
     {
-        if($post->image_post) {
+        if ($post->image_post) {
             Storage::delete($post->image_post);
         }
 
