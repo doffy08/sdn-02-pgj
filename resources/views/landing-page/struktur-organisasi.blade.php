@@ -3,9 +3,19 @@
 @section('title', 'Struktur Organisasi | SDN Kebonagung')
 
 @section('content')
-<main id="main" data-aos="fade-in">
+    <main id="main" data-aos="fade-in">
 
-    <h1>Struktur Organisasi</h1>
+        <section id="breadcrumbs" class="breadcrumbs">
+            <div class="container">
+                <h2>Struktur Organisasi</h2>
+            </div>
+        </section>
 
-</main>
+        <section id="struktur-organisasi" class="struktur-organisasi">
+            <div class="container" data-aos="fade-up">
+                <img src="{{ asset('assets/img/IMG_20260408_114350.jpg') }}" alt="Struktur Organisasi"
+                    class="img-fluid rounded shadow w-full" style="object-fit: cover; border: 8px solid #fff;">
+            </div>
+        </section>
+    </main>
 @endsection
