@@ -7,39 +7,45 @@
 
         <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
-            <li><a class="{{ Request::is('/') ? 'active' : '' }}" href="/">Beranda</a></li>
-           <li class="dropdown"><a href="#"><span>Profile</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a class="{{ Request::is('sambutanks') ? 'active' : '' }}" href="/sambutanks">Sambutan Kepala Sekolah</a></li>
-              <li><a class="{{ Request::is('staff') ? 'active' : '' }}" href="/staff">Pengajar</a></li>
-              <li><a class="{{ Request::is('sejarah') ? 'active' : '' }}" href="/sejarah">Sejarah</a></li>
-              <li><a class="{{ Request::is('vision') ? 'active' : '' }}" href="/vision">Visi Dan Misi</a></li>
-              <li><a class="{{ Request::is('struktur-organisasi') ? 'active' : '' }}" href="/struktur-organisasi">Struktur Organisasi</a></li>
-            </ul>
-          </li>
+                <li><a class="{{ Request::is('/') ? 'active' : '' }}" href="/">Beranda</a></li>
+                <li class="dropdown"><a href="#"><span>Profile</span> <i
+                            class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                        <li><a class="{{ Request::is('sambutanks') ? 'active' : '' }}" href="/sambutanks">Sambutan
+                                Kepala Sekolah</a></li>
+                        <li><a class="{{ Request::is('staff') ? 'active' : '' }}" href="/staff">Pengajar</a></li>
+                        <li><a class="{{ Request::is('sejarah') ? 'active' : '' }}" href="/sejarah">Sejarah</a></li>
+                        <li><a class="{{ Request::is('vision') ? 'active' : '' }}" href="/vision">Visi Dan Misi</a></li>
+                        <li><a class="{{ Request::is('struktur-organisasi') ? 'active' : '' }}"
+                                href="/struktur-organisasi">Struktur Organisasi</a></li>
+                    </ul>
+                </li>
 
-          <li class="dropdown"><a href="#"><span>Manajemen</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-               <li><a class="{{ Request::is('fasilitas') ? 'active' : '' }}" href="/fasilitas">Fasilitas</a></li>
-              <li><a href="#">Kepegawaian</a></li>
-              <li><a class="{{ Request::is('prestasi') ? 'active' : '' }}" href="/prestasi">Prestasi</a></li>
-               <li><a class="{{ Request::is('ekstrakulikuler') ? 'active' : '' }}" href="/ekstrakulikuler">Ekstrakulikuler</a></li>
-            </ul>
-          </li>
-          
-           <li class="dropdown"><a href="#"><span>Kegiatan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a> 
-            <ul>
-              <li><a class="{{ Request::is('news') ? 'active' : '' }}" href="/news">Berita</a></li>
-              <li><a class="{{ Request::is('galeri') ? 'active' : '' }}" href="/galeri">Galeri</a></li>
+                <li class="dropdown"><a href="#"><span>Manajemen</span> <i
+                            class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                        <li><a class="{{ Request::is('fasilitas') ? 'active' : '' }}" href="/fasilitas">Fasilitas</a>
+                        </li>
+                        <li><a class="{{ Request::is('prestasi') ? 'active' : '' }}" href="/prestasi">Prestasi</a></li>
+                        <li><a class="{{ Request::is('ekstrakulikuler') ? 'active' : '' }}"
+                                href="/ekstrakulikuler">Ekstrakulikuler</a></li>
+                    </ul>
+                </li>
 
-            </ul>
-            
-           
-           
-           
-           
+                <li class="dropdown"><a href="#"><span>Kegiatan</span> <i
+                            class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                        <li><a class="{{ Request::is('news') ? 'active' : '' }}" href="/news">Berita</a></li>
+                        <li><a class="{{ Request::is('galeri') ? 'active' : '' }}" href="/galeri">Galeri</a></li>
 
-            {{-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                    </ul>
+
+
+
+
+
+
+                    {{-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
                 <li><a href="#">Drop Down 1</a></li>
                 <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
@@ -61,8 +67,8 @@
         </nav><!-- .navbar -->
 
         @auth
-        <a href="{{ route('dashboard') }}" class="get-started-btn">Dashboard</a>
-        {{-- @else
+            <a href="{{ route('dashboard') }}" class="get-started-btn">Dashboard</a>
+            {{-- @else
         <a href="{{ route('login') }}" class="get-started-btn">Login</a> --}}
         @endauth
     </div>
