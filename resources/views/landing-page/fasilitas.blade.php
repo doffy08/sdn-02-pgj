@@ -5,7 +5,79 @@
 @section('content')
 <main id="main" data-aos="fade-in">
 
-    <h1>Perpustakann</h1>
+    <section id="breadcrumbs" class="breadcrumbs">
+  <div class="container">
+    <ol>
+      <li><a href="{{ url('/') }}">Beranda</a></li>
+      <li>Fasilitas Sekolah</li>
+    </ol>
+    <h2>Fasilitas Sekolah</h2>
+  </div>
+</section><!-- End Breadcrumbs -->
+
+<!-- ======= Fasilitas Section ======= -->
+<section id="fasilitas" class="fasilitas section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Fasilitas Sekolah</h2>
+      <p>Berbagai fasilitas unggulan yang mendukung proses belajar mengajar siswa kami</p>
+    </div>
+
+    <div class="row gy-4">
+
+        {{-- Card --}}
+        <div class="col-lg-6 col-md-6" data-aos="fade-up">
+          <div class="card h-100 border-0 shadow-sm overflow-hidden">
+            
+            <!-- Gambar -->
+            <div class="position-relative">
+                <img src="{{ asset('assets/img/haldep.jpg') }}" 
+                     class="card-img-top img-fluid" 
+                     alt="Aman"
+                     style="height: 320px; object-fit: cover;">
+            </div>
+
+            <!-- Body Card -->
+            <div class="card-body text-center p-4">
+              <h5 class="card-title fw-bold text-dark mb-3">Haldep</h5>
+                <p class="card-text text-muted">
+                  Halaman depan
+                </p>
+            </div>
+
+          </div>
+        </div>
+ {{-- End Card --}}
+
+ {{-- Card --}}
+        <div class="col-lg-6 col-md-6" data-aos="fade-up">
+          <div class="card h-100 border-0 shadow-sm overflow-hidden">
+            
+            <!-- Gambar -->
+            <div class="position-relative">
+                <img src="{{ asset('assets/img/haldep.jpg') }}" 
+                     class="card-img-top img-fluid" 
+                     alt="Aman"
+                     style="height: 320px; object-fit: cover;">
+            </div>
+
+            <!-- Body Card -->
+            <div class="card-body text-center p-4">
+              <h5 class="card-title fw-bold text-dark mb-3">Haldep</h5>
+                <p class="card-text text-muted">
+                  Halaman depan
+                </p>
+            </div>
+
+          </div>
+        </div>
+ {{-- End Card --}}
+
+    </div>
+
+  </div>
+</section><
 
 </main>
 @endsection
