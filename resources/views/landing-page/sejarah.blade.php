@@ -38,7 +38,7 @@
                                         <div class="timeline-marker bg-primary position-absolute"></div>
                                         <h5 class="fw-bold text-secondary">Awal Berdiri</h5>
                                         <p class="text-muted">Sekolah Dasar kami didirikan pada tahun <strong>1995</strong>
-                                            dengan nama awal SD Negeri 01 Purwokerto Selatan. Saat itu hanya memiliki 3
+                                            dengan nama awal SD Negeri 02 Pagojengan. Saat itu hanya memiliki 3
                                             ruang kelas dan 45 siswa.</p>
                                     </div>
                                 </div>
@@ -49,7 +49,7 @@
                                         <h5 class="fw-bold text-secondary">Perkembangan</h5>
                                         <p class="text-muted">Pada tahun 2005, sekolah mengalami renovasi besar-besaran dan
                                             penambahan fasilitas. Jumlah siswa meningkat pesat hingga mencapai lebih dari
-                                            300 siswa.</p>
+                                            150 siswa.</p>
                                     </div>
                                 </div>
 
@@ -73,7 +73,7 @@
                                     kepala sekolah, dan pemerintah daerah yang senantiasa mendukung perkembangan pendidikan
                                     di wilayah ini.
                                     Dari sebuah sekolah kecil dengan fasilitas terbatas, kini kami bangga menjadi salah satu
-                                    sekolah dasar unggulan di Purwokerto.
+                                    sekolah dasar unggulan di Paguyangan.
                                 </p>
                             </div>
 

@@ -25,13 +25,13 @@
                     <!-- Foto Kepala Sekolah -->
                     <div class="col-lg-5">
                         <div class="text-center">
-                            <img src="{{ asset('assets/img/haldep.jpg') }}" class="img-fluid rounded-circle shadow"
+                            <img src="{{ asset('assets/img/Nur Fiatun.jpeg') }}" class="img-fluid rounded-circle shadow"
                                 alt="Kepala Sekolah"
                                 style="width: 280px; height: 280px; object-fit: cover; border: 8px solid #fff;">
 
 
-                            <h4 class="mt-4 fw-bold text-dark">Nama Kepala Sekolah</h4>
-                            <p class="text-muted">Kepala Sekolah SD Negeri ...</p>
+                            <h4 class="mt-4 fw-bold text-dark">Juriyah, S.Pd</h4>
+                            <p class="text-muted">Kepala Sekolah SD Negeri 02 Pagojengan</p>
                         </div>
                     </div>
 
@@ -68,7 +68,7 @@
 
                             <div class="mt-5">
                                 <p class="fw-bold mb-1">Hormat kami,</p>
-                                <p class="fw-bold" style="color: #5fcf80;">Nama Lengkap Kepala Sekolah<br>
+                                <p class="fw-bold" style="color: #5fcf80;">Juriyah, S.Pd<br>
                                     <span class="text-muted" style="font-size: 0.95rem;">Kepala Sekolah</span>
                                 </p>
                             </div>

@@ -7,10 +7,6 @@
 
     <section id="breadcrumbs" class="breadcrumbs">
   <div class="container">
-    <ol>
-      <li><a href="{{ url('/') }}">Beranda</a></li>
-      <li>Fasilitas Sekolah</li>
-    </ol>
     <h2>Fasilitas Sekolah</h2>
   </div>
 </section><!-- End Breadcrumbs -->
@@ -32,7 +28,7 @@
             
             <!-- Gambar -->
             <div class="position-relative">
-                <img src="{{ asset('assets/img/haldep.jpg') }}" 
+                <img src="{{ asset('assets/img/perpustakaan.jpg') }}" 
                      class="card-img-top img-fluid" 
                      alt="Aman"
                      style="height: 320px; object-fit: cover;">
@@ -40,11 +36,13 @@
 
             <!-- Body Card -->
             <div class="card-body text-center p-4">
-              <h5 class="card-title fw-bold text-dark mb-3">Haldep</h5>
+              <h5 class="card-title fw-bold text-dark mb-3">Perpustakaan</h5>
                 <p class="card-text text-muted">
-                  Halaman depan
+                   Perpustakaan berfungsi sebagai pusat informasi, pendidikan, penelitian, pelestarian budaya, dan rekreasi untuk meningkatkan kecerdasan bangsa.
                 </p>
             </div>
+
+            
 
           </div>
         </div>
@@ -56,7 +54,7 @@
             
             <!-- Gambar -->
             <div class="position-relative">
-                <img src="{{ asset('assets/img/haldep.jpg') }}" 
+                <img src="{{ asset('assets/img/uks.jpg') }}" 
                      class="card-img-top img-fluid" 
                      alt="Aman"
                      style="height: 320px; object-fit: cover;">
@@ -64,16 +62,61 @@
 
             <!-- Body Card -->
             <div class="card-body text-center p-4">
-              <h5 class="card-title fw-bold text-dark mb-3">Haldep</h5>
+              <h5 class="card-title fw-bold text-dark mb-3">UKS</h5>
                 <p class="card-text text-muted">
-                  Halaman depan
+                  Selain menjadi UKS Ruangan ini juga digunakan untuk kegiatan Belajar Mengajar kelas 6
                 </p>
             </div>
 
           </div>
         </div>
  {{-- End Card --}}
+ {{-- Card --}}
+        <div class="col-lg-6 col-md-6" data-aos="fade-up">
+          <div class="card h-100 border-0 shadow-sm overflow-hidden">
+            
+            <!-- Gambar -->
+            <div class="position-relative">
+                <img src="{{ asset('assets/img/ruang tunggu tamu.jpg') }}" 
+                     class="card-img-top img-fluid" 
+                     alt="Aman"
+                     style="height: 320px; object-fit: cover;">
+            </div>
 
+            <!-- Body Card -->
+            <div class="card-body text-center p-4">
+              <h5 class="card-title fw-bold text-dark mb-3">Ruang Tunggu Tamu</h5>
+                <p class="card-text text-muted">
+                  
+                </p>
+            </div>
+
+          </div>
+        </div>
+ {{-- End Card --}}
+ {{-- Card --}}
+        <div class="col-lg-6 col-md-6" data-aos="fade-up">
+          <div class="card h-100 border-0 shadow-sm overflow-hidden">
+            
+            <!-- Gambar -->
+            <div class="position-relative">
+                <img src="{{ asset('assets/img/uks.jpg') }}" 
+                     class="card-img-top img-fluid" 
+                     alt="Aman"
+                     style="height: 320px; object-fit: cover;">
+            </div>
+
+            <!-- Body Card -->
+            <div class="card-body text-center p-4">
+              <h5 class="card-title fw-bold text-dark mb-3">UKS</h5>
+                <p class="card-text text-muted">
+                  Selain menjadi UKS Ruangan ini juga digunakan untuk kegiatan Belajar Mengajar kelas 6
+                </p>
+            </div>
+
+          </div>
+        </div>
+ {{-- End Card --}}
     </div>
 
   </div>

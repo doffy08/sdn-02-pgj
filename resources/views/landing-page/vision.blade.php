@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section('title', 'Tentang | SDN Kebonagung')
+@section('title', 'Tentang | SDN 02 Pagojengan')
 
 @section('content')
 <main id="main">
@@ -18,7 +18,7 @@
 
             <div class="row">
             <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-                <img src="assets/img/about.jpg" class="img-fluid" alt="">
+                <img src="assets/img/visi dan misi.JPG" class="img-fluid" alt="">
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
                 <h3>MISI SEKOLAH</h3>
