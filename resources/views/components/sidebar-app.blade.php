@@ -1,26 +1,28 @@
 <div class="main-sidebar">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand">
-            <a href="index.html">SDN 02 Pagojengan </a>
+            <a href="{{ route('dashboard') }}">SDN 02 Pagojengan </a>
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
-            <a href="index.html">St</a>
+            <a href="{{ route('dashboard') }}">St</a>
         </div>
         <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>
             <li class="{{ Request::is('dashboard') ? 'active' : '' }}">
-                <a href="/dashboard" class="nav-link"><i class="fas fa-fire"></i><span>Statistik</span></a>
+                <a href="{{ route('dashboard') }}" class="nav-link"><i class="fas fa-fire"></i><span>Statistik</span></a>
             </li>
             <li class="menu-header">Database</li>
             <li class="{{ Request::is('dashboard/post') ? 'active' : '' }}">
-                <a class="nav-link" href="/dashboard/post"><i class="fas fa-newspaper"></i> <span>Artikel</span></a>
+                <a class="nav-link" href="{{ route('post.index') }}"><i class="fas fa-newspaper"></i>
+                    <span>Artikel</span></a>
             </li>
             <li class="{{ Request::is('dashboard/staff') ? 'active' : '' }}">
-                <a class="nav-link" href="/dashboard/staff"><i class="fas fa-user-tie"></i> <span>Data Tenaga
+                <a class="nav-link" href="{{ route('staff.index') }}"><i class="fas fa-user-tie"></i> <span>Data Tenaga
                         Pengajar</span></a>
             </li>
             <li class="{{ Request::is('dashboard/student') ? 'active' : '' }}">
-                <a href="/dashboard/student" class="nav-link"><i class="fas fa-users"></i> <span>Data Siswa </span></a>
+                <a href="{{ route('student.index') }}" class="nav-link"><i class="fas fa-users"></i> <span>Data Siswa
+                    </span></a>
             </li>
         </ul>
 
