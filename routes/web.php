@@ -36,6 +36,7 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/sejarah', 'sejarah')->name('sejarah');
     Route::get('/struktur-organisasi', 'struktur_organisasi')->name('struktur_organisasi');
     Route::get('/news/{post:slug}', 'showNews')->name('news.show');
+    Route::get('/prestasi/{prestasi:slug}', 'detail_prestasi')->name('prestasi.show');
 });
 
 Route::controller(LoginController::class)->group(function () {

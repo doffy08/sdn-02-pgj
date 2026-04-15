@@ -53,7 +53,9 @@
                                 <!-- Body -->
                                 <div class="card-body text-center p-4 d-flex flex-column">
                                     <h5 class="card-title fw-bold text-dark mb-3">
-                                        {{ $pr->title }}
+                                        <a href="{{ route('prestasi.show', $pr->slug) }}">
+                                            {{ $pr->title }}
+                                        </a>
                                     </h5>
 
                                     <p class="card-text text-muted flex-grow-1 mb-0">

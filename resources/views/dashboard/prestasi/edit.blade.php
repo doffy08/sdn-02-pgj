@@ -46,55 +46,54 @@
                                         @endif
                                         <input type="file"
                                             class="form-control-file @error('image_prestasi') is-invalid @enderror"
-                                            id="imgInput" name="image_prestasi"
-                                            value="{{ $prestasi->image_prestasi }}>
-                                    @error('image_prestasi')
-<div class="invalid-feedback">
-                                        {{ $message }}
+                                            id="imgInput" name="image_prestasi" value="{{ $prestasi->image_prestasi }}">
+                                        @error('image_prestasi')
+                                            <div class="invalid-feedback">
+                                                {{ $message }}
+                                            </div>
+                                        @enderror
                                     </div>
-                                @enderror
-                        </div>
 
-                        <div class="form-group">
-                            <label>Konten</label>
-                            <input id="body" type="hidden" name="body"
-                                value="{{ old('body', $prestasi->body) }}">
-                            <trix-editor input="body"></trix-editor>
-                            @error('body')
-                                <p class="text-danger">
-                                    {{ $message }}
-                                </p>
-                            @enderror
-                        </div>
+                                    <div class="form-group">
+                                        <label>Konten</label>
+                                        <input id="body" type="hidden" name="body"
+                                            value="{{ old('body', $prestasi->body) }}">
+                                        <trix-editor input="body"></trix-editor>
+                                        @error('body')
+                                            <p class="text-danger">
+                                                {{ $message }}
+                                            </p>
+                                        @enderror
+                                    </div>
 
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary">
-                                Simpan Perubahan
-                            </button>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary">
+                                            Simpan Perubahan
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                        </form>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-</div>
+        </section>
+    </div>
 @endsection
 
 @section('script')
-<script>
-    // trix hidden attach file
-    document.addEventListener("trix-file-accept", function(event) {
-        event.preventDefault();
-    });
+    <script>
+        // trix hidden attach file
+        document.addEventListener("trix-file-accept", function(event) {
+            event.preventDefault();
+        });
 
-    // image preview
-    imgInput.onchange = evt => {
-        const [file] = imgInput.files
-        imgPreview.style.display = 'block';
-        if (file) {
-            imgPreview.src = URL.createObjectURL(file)
+        // image preview
+        imgInput.onchange = evt => {
+            const [file] = imgInput.files
+            imgPreview.style.display = 'block';
+            if (file) {
+                imgPreview.src = URL.createObjectURL(file)
+            }
         }
-    }
-</script>
+    </script>
 @endsection

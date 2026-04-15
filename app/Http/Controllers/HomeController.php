@@ -51,6 +51,14 @@ class HomeController extends Controller
             'prestasi' => Prestasi::latest()->paginate(9)
         ]);
     }
+
+    public function detail_prestasi(Prestasi $prestasi)
+    {
+        return view('landing-page.detail-prestasi', [
+            'prestasi' => $prestasi
+        ]);
+    }
+
     public function fasilitas()
     {
         return view('landing-page.fasilitas');
