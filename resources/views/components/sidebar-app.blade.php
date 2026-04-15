@@ -24,6 +24,11 @@
                 <a href="{{ route('student.index') }}" class="nav-link"><i class="fas fa-users"></i> <span>Data Siswa
                     </span></a>
             </li>
+            <li class="{{ Request::is('dashboard/prestasi') ? 'active' : '' }}">
+                <a href="{{ route('prestasi.index') }}" class="nav-link"><i class="fas fa-trophy"></i> <span>Prestasi
+                        Siswa
+                    </span></a>
+            </li>
         </ul>
 
         <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
