@@ -51,6 +51,31 @@ class PrestasiController extends Controller
         ]);
     }
 
+    public function update(Request $request, Prestasi $prestasi)
+    {
+        $validated = $request->validate([
+            'title' => ['required', 'max:255'],
+            'image_prestasi' => ['image', 'file', 'max:1024'],
+            'body' => ['required']
+        ]);
+
+        if ($request->file('image_prestasi')) {
+            if ($request->oldImage) {
+                Storage::delete($request->oldImage);
+            }
+            $validated['image_prestasi'] = $request->file('image_prestasi')->store('prestasi-images');
+        }
+
+        $validated['slug'] = Str::slug($request->title, '-');
+        // $validated['user_id'] = auth()->user()->id;
+        $validated['excerpt'] = Str::limit(strip_tags($request->body), 100);
+
+        Prestasi::where('id', $prestasi->id)
+            ->update($validated);
+
+        return redirect('/dashboard/prestasi')->with('success', 'Prestasi berhasil diubah!');
+    }
+
     public function destroy(Prestasi $prestasi)
     {
         if ($prestasi->image_prestasi) {
