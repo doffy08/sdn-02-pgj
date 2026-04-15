@@ -8,7 +8,7 @@
         </div>
         <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>
-            <li class="{{ Request::is('dashboard/post') ? 'active' : '' }}"">
+            <li class="{{ Request::is('dashboard') ? 'active' : '' }}">
                 <a href="/dashboard" class="nav-link"><i class="fas fa-fire"></i><span>Statistik</span></a>
             </li>
             <li class="menu-header">Database</li>
