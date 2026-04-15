@@ -33,18 +33,18 @@
                                     <table class="table table-striped table-md">
                                         <tr>
                                             <th>No</th>
-                                            <th>Nama Prestasi</th>
+                                            <th style="min-width: 300px">Nama Prestasi</th>
                                             <th>Keterangan</th>
-                                            <th>Dibuat pada</th>
-                                            <th style="width: 100px">Action</th>
+                                            <th style="min-width: 150px">Dibuat pada</th>
+                                            <th style="min-width: 100px">Aksi</th>
                                         </tr>
 
-                                        @foreach ($prestasi as $pr)
+                                        @forelse ($prestasi as $pr)
                                             <tr>
-                                                <td>{{ $loop->iteration }}</td>
+                                                <td style="text-align: center">{{ $loop->iteration }}</td>
                                                 <td>{{ $pr->title }}</td>
                                                 <td>{{ $pr->excerpt }}</td>
-                                                <td>{{ $pr->created_at }}</td>
+                                                <td>{{ $pr->created_at->locale('id')->diffForHumans() }}</td>
                                                 <td>
                                                     <a href="{{ route('prestasi.edit', ['prestasi' => $pr->slug]) }}"
                                                         class="btn btn-sm btn-warning"><i class="fas fa-pen"></i></a>
@@ -60,14 +60,18 @@
                                                 </td>
                                                 <td></td>
                                             </tr>
-                                        @endforeach
+                                        @empty
+                                            <tr>
+                                                <td colspan="6" class="text-center">Tidak ada data</td>
+                                            </tr>
+                                        @endforelse
                                     </table>
                                 </div>
                             </div>
                             <div class="card-footer text-right">
                                 <nav class="d-inline-block">
                                     <ul class="pagination mb-0">
-                                        {{-- {{ $posts->links() }} --}}
+                                        {{ $prestasi->links() }}
                                     </ul>
                                 </nav>
                             </div>

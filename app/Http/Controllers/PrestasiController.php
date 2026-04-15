@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Prestasi;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 class PrestasiController extends Controller
@@ -34,12 +35,23 @@ class PrestasiController extends Controller
 
         $validated['slug'] = Str::slug($request->title, '-');
         // $validated['user_id'] = auth()->user()->id;
-        $validated['excerpt'] = Str::limit(strip_tags($request->body), 200);
+        $validated['excerpt'] = Str::limit(strip_tags($request->body), 100);
 
         Prestasi::create($validated);
 
         $request->session()->flash('success', 'Prestasi Berhasil Ditambahkan!');
 
         return redirect('/dashboard/prestasi');
+    }
+
+    public function destroy(Prestasi $prestasi)
+    {
+        if ($prestasi->image_prestasi) {
+            Storage::delete($prestasi->image_prestasi);
+        }
+
+        Prestasi::destroy($prestasi->id);
+
+        return redirect('/dashboard/prestasi')->with('success', 'Prestasi berhasil dihapus!');
     }
 }
