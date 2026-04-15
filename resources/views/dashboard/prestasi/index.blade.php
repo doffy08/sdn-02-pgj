@@ -36,7 +36,7 @@
                                             <th>Nama Prestasi</th>
                                             <th>Keterangan</th>
                                             <th>Dibuat pada</th>
-                                            <th>Action</th>
+                                            <th style="width: 100px">Action</th>
                                         </tr>
 
                                         @foreach ($prestasi as $pr)

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Collection;
 use App\Models\Staff;
 use App\Models\Post;
+use App\Models\Prestasi;
 
 class HomeController extends Controller
 {
@@ -22,7 +23,7 @@ class HomeController extends Controller
             'posts' => Post::latest()->paginate(9)
         ]);
     }
-    
+
     public function showNews(Post $post)
     {
         return view('landing-page.show-news', [
@@ -46,13 +47,15 @@ class HomeController extends Controller
 
     public function prestasi()
     {
-        return view('landing-page.prestasi');
+        return view('landing-page.prestasi', [
+            'prestasi' => Prestasi::latest()->paginate(9)
+        ]);
     }
     public function fasilitas()
     {
         return view('landing-page.fasilitas');
     }
-    
+
     public function ekstrakulikuler()
     {
         return view('landing-page.ekstrakulikuler');
@@ -61,18 +64,18 @@ class HomeController extends Controller
     {
         return view('landing-page.galeri');
     }
-    
+
     public function sambutanks()
     {
         return view('landing-page.sambutanks');
     }
 
-     public function sejarah()
+    public function sejarah()
     {
         return view('landing-page.sejarah');
     }
 
-     public function struktur_organisasi()
+    public function struktur_organisasi()
     {
         return view('landing-page.struktur-organisasi');
     }
