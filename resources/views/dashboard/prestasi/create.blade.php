@@ -12,7 +12,7 @@
     <div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1>Prestasi</h1>
+                <h1>Tambah Prestasi</h1>
             </div>
 
             <div class="section-body">
@@ -48,7 +48,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label>Body</label>
+                                        <label>Konten</label>
                                         <input id="body" type="hidden" name="body" value="{{ old('body') }}">
                                         <trix-editor input="body"></trix-editor>
                                         @error('body')

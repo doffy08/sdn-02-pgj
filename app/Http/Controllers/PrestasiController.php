@@ -44,6 +44,13 @@ class PrestasiController extends Controller
         return redirect('/dashboard/prestasi');
     }
 
+    public function edit(Prestasi $prestasi)
+    {
+        return view('dashboard.prestasi.edit', [
+            'prestasi' => $prestasi,
+        ]);
+    }
+
     public function destroy(Prestasi $prestasi)
     {
         if ($prestasi->image_prestasi) {
