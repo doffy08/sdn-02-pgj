@@ -8,6 +8,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Category;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\PrestasiController;
 use App\Http\Controllers\StaffController;
 use App\Http\Controllers\StudentController;
 
@@ -59,14 +60,14 @@ Route::controller(PostController::class)->middleware('auth')->group(function () 
     Route::delete('/dashboard/post/delete/{post}', 'destroy')->name('post.delete');
 });
 
-// Route::controller(Category::class)->middleware('auth')->group(function () {
-//     Route::get('/dashboard/post/category', 'index')->name('category.index');
-//     Route::get('/dashboard/post/category/create', 'create')->name('post.create');
-//     Route::get('/dashboard/post/category/edit/{post:slug}', 'edit')->name('post.edit');
-//     Route::post('/dashboard/category/post', 'store')->name('post.store');
-//     Route::put('/dashboard/post/category/edit/{post:slug}', 'update')->name('post.update');
-//     Route::delete('/dashboard/post/category/delete/{post}', 'destroy')->name('post.delete');
-// });
+Route::controller(PrestasiController::class)->middleware('auth')->group(function () {
+    Route::get('/dashboard/prestasi', 'index')->name('prestasi.index');
+    Route::get('/dashboard/prestasi/create', 'create')->name('prestasi.create');
+    Route::get('/dashboard/prestasi/edit/{prestasi:slug}', 'edit')->name('prestasi.edit');
+    Route::post('/dashboard/prestasi', 'store')->name('prestasi.store');
+    Route::put('/dashboard/prestasi/edit/{prestasi:slug}', 'update')->name('prestasi.update');
+    Route::delete('/dashboard/prestasi/delete/{prestasi}', 'destroy')->name('prestasi.delete');
+});
 
 Route::controller(StaffController::class)->middleware('auth')->group(function () {
     Route::get('/dashboard/staff', 'index')->name('staff.index');
