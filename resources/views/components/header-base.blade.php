@@ -7,36 +7,44 @@
 
         <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
-                <li><a class="{{ Request::is('/') ? 'active' : '' }}" href="/">Beranda</a></li>
+                <li><a class="{{ Request::is('/') ? 'active' : '' }}" href="{{ route('home') }}">Beranda</a></li>
                 <li class="dropdown"><a href="#"><span>Profile</span> <i
                             class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
-                        <li><a class="{{ Request::is('sambutanks') ? 'active' : '' }}" href="/sambutanks">Sambutan
+                        <li><a class="{{ Request::is('sambutanks') ? 'active' : '' }}"
+                                href="{{ route('sambutanks') }}">Sambutan
                                 Kepala Sekolah</a></li>
-                        <li><a class="{{ Request::is('staff') ? 'active' : '' }}" href="/staff">Pengajar</a></li>
-                        <li><a class="{{ Request::is('sejarah') ? 'active' : '' }}" href="/sejarah">Sejarah</a></li>
-                        <li><a class="{{ Request::is('vision') ? 'active' : '' }}" href="/vision">Visi Dan Misi</a></li>
+                        <li><a class="{{ Request::is('staff') ? 'active' : '' }}"
+                                href="{{ route('staff') }}">Pengajar</a></li>
+                        <li><a class="{{ Request::is('sejarah') ? 'active' : '' }}"
+                                href="{{ route('sejarah') }}">Sejarah</a></li>
+                        <li><a class="{{ Request::is('vision') ? 'active' : '' }}" href="{{ route('vision') }}">Visi
+                                Dan Misi</a></li>
                         <li><a class="{{ Request::is('struktur-organisasi') ? 'active' : '' }}"
-                                href="/struktur-organisasi">Struktur Organisasi</a></li>
+                                href="{{ route('struktur_organisasi') }}">Struktur Organisasi</a></li>
                     </ul>
                 </li>
 
                 <li class="dropdown"><a href="#"><span>Manajemen</span> <i
                             class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
-                        <li><a class="{{ Request::is('fasilitas') ? 'active' : '' }}" href="/fasilitas">Fasilitas</a>
+                        <li><a class="{{ Request::is('fasilitas') ? 'active' : '' }}"
+                                href="{{ route('fasilitas') }}">Fasilitas</a>
                         </li>
-                        <li><a class="{{ Request::is('prestasi') ? 'active' : '' }}" href="/prestasi">Prestasi</a></li>
+                        <li><a class="{{ Request::is('prestasi') ? 'active' : '' }}"
+                                href="{{ route('prestasi') }}">Prestasi</a></li>
                         <li><a class="{{ Request::is('ekstrakulikuler') ? 'active' : '' }}"
-                                href="/ekstrakulikuler">Ekstrakulikuler</a></li>
+                                href="{{ route('ekstrakulikuler') }}">Ekstrakulikuler</a></li>
                     </ul>
                 </li>
 
                 <li class="dropdown"><a href="#"><span>Kegiatan</span> <i
                             class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
-                        <li><a class="{{ Request::is('news') ? 'active' : '' }}" href="/news">Berita</a></li>
-                        <li><a class="{{ Request::is('galeri') ? 'active' : '' }}" href="/galeri">Galeri</a></li>
+                        <li><a class="{{ Request::is('news') ? 'active' : '' }}" href="{{ route('news') }}">Berita</a>
+                        </li>
+                        <li><a class="{{ Request::is('galeri') ? 'active' : '' }}"
+                                href="{{ route('galeri') }}">Galeri</a></li>
 
                     </ul>
 
