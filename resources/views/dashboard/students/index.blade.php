@@ -32,17 +32,17 @@
                                 <div class="table-responsive">
                                     <table class="table table-striped table-md">
                                         <tr>
-                                            <th>#</th>
+                                            <th class="text-center">No</th>
                                             <th>Nama</th>
                                             <th>Jenis Kelamin</th>
                                             <th>NIS</th>
                                             <th>Kelas</th>
-                                            <th>Action</th>
+                                            <th style="min-width: 100px">Aksi</th>
                                         </tr>
 
                                         @foreach ($students as $student)
                                             <tr>
-                                                <td>{{ $loop->iteration }}</td>
+                                                <td class="text-center">{{ $loop->iteration }}</td>
                                                 <td>{{ $student->name }}</td>
                                                 <td>{{ $student->gender }}</td>
                                                 <td>{{ $student->nis }}</td>

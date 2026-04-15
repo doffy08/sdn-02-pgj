@@ -12,7 +12,7 @@
     <div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1>Artikel</h1>
+                <h1>Tambah Artikel</h1>
             </div>
 
             <div class="section-body">
@@ -23,7 +23,7 @@
                                 <form action="{{ route('post.store') }}" method="POST" enctype="multipart/form-data">
                                     @csrf
                                     <div class="form-group">
-                                        <label for="title" class="form-label">Title</label>
+                                        <label for="title" class="form-label">Judul Artikel</label>
                                         <input type="text" id="title"
                                             class="form-control @error('title') is-invalid @enderror" name="title"
                                             value="{{ old('title') }}">
@@ -65,7 +65,7 @@
                                 </div> --}}
 
                                     <div class="form-group">
-                                        <label for="imgInput">Input Image Post</label>
+                                        <label for="imgInput">Foto Artikel</label>
                                         <img class="img-fluid mb-3 col-sm-3" id="imgPreview">
                                         <input type="file"
                                             class="form-control-file @error('image_post') is-invalid @enderror"
@@ -78,7 +78,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label>Body</label>
+                                        <label>Konten</label>
                                         <input id="body" type="hidden" name="body" value="{{ old('body') }}">
                                         <trix-editor input="body"></trix-editor>
                                         @error('body')
@@ -90,7 +90,7 @@
 
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-primary">
-                                            Submit
+                                            Tambahkan
                                         </button>
                                     </div>
                                 </form>

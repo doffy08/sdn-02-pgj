@@ -12,7 +12,7 @@
     <div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1>Edit Prestasi</h1>
+                <h1>Ubah Prestasi</h1>
             </div>
 
             <div class="section-body">
@@ -37,7 +37,7 @@
                                     @enderror
 
                                     <div class="form-group">
-                                        <label for="imgInput">Tambah Gambar Prestasi</label>
+                                        <label for="imgInput">Foto Prestasi</label>
                                         @if ($prestasi->image_prestasi)
                                             <img src="{{ asset('storage/' . $prestasi->image_prestasi) }}"
                                                 class="img-fluid mb-3 col-sm-3 d-block" id="imgPreview">

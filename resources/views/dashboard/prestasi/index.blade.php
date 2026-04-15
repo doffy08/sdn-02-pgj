@@ -32,7 +32,7 @@
                                 <div class="table-responsive">
                                     <table class="table table-striped table-md">
                                         <tr>
-                                            <th>No</th>
+                                            <th class="text-center">No</th>
                                             <th style="min-width: 300px">Nama Prestasi</th>
                                             <th>Keterangan</th>
                                             <th style="min-width: 150px">Dibuat pada</th>
@@ -41,7 +41,7 @@
 
                                         @forelse ($prestasi as $pr)
                                             <tr>
-                                                <td style="text-align: center">{{ $loop->iteration }}</td>
+                                                <td class="text-center">{{ $loop->iteration }}</td>
                                                 <td>{{ $pr->title }}</td>
                                                 <td>{{ $pr->excerpt }}</td>
                                                 <td>{{ $pr->created_at->locale('id')->diffForHumans() }}</td>

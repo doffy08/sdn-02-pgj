@@ -35,19 +35,19 @@
                                 <div class="table-responsive">
                                     <table class="table table-striped table-md">
                                         <tr>
-                                            <th>#</th>
-                                            <th>Judul</th>
+                                            <th class="text-center">No</th>
+                                            <th style="min-width: 300px">Judul</th>
                                             <th>Kategori</th>
-                                            <th>Dibuat pada</th>
-                                            <th>Action</th>
+                                            <th style="min-width: 150px">Dibuat pada</th>
+                                            <th style="min-width: 100px">Aksi</th>
                                         </tr>
 
                                         @foreach ($posts as $post)
                                             <tr>
-                                                <td>{{ $loop->iteration }}</td>
+                                                <td class="text-center">{{ $loop->iteration }}</td>
                                                 <td>{{ $post->title }}</td>
                                                 <td>{{ $post->category }}</td>
-                                                <td>{{ $post->created_at }}</td>
+                                                <td>{{ $post->created_at->locale('id')->diffForHumans() }}</td>
                                                 <td>
                                                     <a href="{{ route('post.edit', ['post' => $post->slug]) }}"
                                                         class="btn btn-sm btn-warning"><i class="fas fa-pen"></i></a>

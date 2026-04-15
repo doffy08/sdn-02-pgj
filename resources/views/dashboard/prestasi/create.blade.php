@@ -35,7 +35,7 @@
                                     @enderror
 
                                     <div class="form-group">
-                                        <label for="imgInput">Tambah Gambar Prestasi</label>
+                                        <label for="imgInput">Foto Prestasi</label>
                                         <img class="img-fluid mb-3 col-sm-3" id="imgPreview">
                                         <input type="file"
                                             class="form-control-file @error('image_prestasi') is-invalid @enderror"
