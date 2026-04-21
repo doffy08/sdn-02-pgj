@@ -8,7 +8,7 @@
     <div class="breadcrumbs" data-aos="fade-in">
         <div class="container">
             <h2>VISI SEKOLAH</h2>
-            <h5>”Sekolah dapat membawa generasi mampu menguasai iptek dan imtek”</h5>
+            <h5>”Unggul Dalam Prestasi, Teruji Dalam Keimanan, Ketaqwaan Dan Berakhlak Mulia”</h5>
         </div>
     </div><!-- End Breadcrumbs -->
 
@@ -23,10 +23,12 @@
             <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
                 <h3>MISI SEKOLAH</h3>
                 <ul>
-                <li><i class="bi bi-check-circle"></i> Melaksanakan pembelajaran serta bimbingan secara efektif kepada siswa sesuai potensi masing - masing.</li>
-                <li><i class="bi bi-check-circle"></i> Mendorong pada setiap siswa untuk mengenali potensi dirinya, sehingga dapat di kembangkan secara optimal.</li>
-                <li><i class="bi bi-check-circle"></i> Menumbuhkan semangat penghayatan terhadap ilmu pengetahuan, ajaran agama dan juga budaya bangsa sehingga menjadi sumber kearifan dalam bertindak</li>
-                <li><i class="bi bi-check-circle"></i> Menerapkan manajemen yang transparan dengan melibatkan seluruh warga sekolah dan pihak terkait.</li>
+                <li><i class="bi bi-check-circle"></i> Menanamkan Pendidikan Dasar Agama Islam Yang Yakin Dan Mantap.</li>
+                <li><i class="bi bi-check-circle"></i> Membiasakan Berperilaku Yang Baik Dan Berakhlak Mulia.</li>
+                <li><i class="bi bi-check-circle"></i> Meningkatkan Mutu Pendidikan Sesuai Dengan Tuntutan Masyarakat Dan Perkembangan Ilmu Pengetahuan Dan Teknologi (IPTEK).</li>
+                <li><i class="bi bi-check-circle"></i> Mengembangkan Kemampuan Berpikir Logis, Kritis, Dan Kreatif.</li>
+                <li><i class="bi bi-check-circle"></i> Menumbuhkan Sikap Toleran, Tanggung Jawab, Kemandirian Dan Percakapan Emosional.</li>
+                <li><i class="bi bi-check-circle"></i> Membentuk Rasa Cinta Kepada Bangsa Dan Tanah Air Indonesia.</li>
                 </ul>
 
 

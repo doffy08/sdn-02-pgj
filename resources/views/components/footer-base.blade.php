@@ -19,10 +19,13 @@
                 <h4>Tautan Internal</h4>
                 <ul>
                 <li><i class="bx bx-chevron-right"></i> <a href="/">Beranda</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="{{ route('vision') }}">Tentang SD</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="{{ route('sejarah') }}">Sejarah</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="{{ route('vision') }}">Visi Dan Misi</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="{{ route('struktur_organisasi') }}">Struktur Organisasi</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="{{ route('staff') }}">Pengajar</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="{{ route('news') }}">Berita</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="{{ route('fasilitas') }}">Fasilitas</a></li>
+                
+
 
                 </ul>
             </div>
@@ -61,7 +64,7 @@
             <!-- You can delete the links only if you purchased the pro version. -->
             <!-- Licensing information: https://bootstrapmade.com/license/ -->
             <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            Designed by <a href="https://bootstrapmade.com/">Azka Ikhlasul Amal</a>
             </div>
         </div>
         {{-- <div class="social-links text-center text-md-right pt-3 pt-md-0">

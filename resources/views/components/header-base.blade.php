@@ -11,17 +11,14 @@
                 <li class="dropdown"><a href="#"><span>Profile</span> <i
                             class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
-                        <li><a class="{{ Request::is('sambutanks') ? 'active' : '' }}"
-                                href="{{ route('sambutanks') }}">Sambutan
-                                Kepala Sekolah</a></li>
-                        <li><a class="{{ Request::is('staff') ? 'active' : '' }}"
-                                href="{{ route('staff') }}">Pengajar</a></li>
-                        <li><a class="{{ Request::is('sejarah') ? 'active' : '' }}"
-                                href="{{ route('sejarah') }}">Sejarah</a></li>
-                        <li><a class="{{ Request::is('vision') ? 'active' : '' }}" href="{{ route('vision') }}">Visi
-                                Dan Misi</a></li>
-                        <li><a class="{{ Request::is('struktur-organisasi') ? 'active' : '' }}"
-                                href="{{ route('struktur_organisasi') }}">Struktur Organisasi</a></li>
+                        <li><a class="{{ Request::is('sejarah') ? 'active' : '' }}"href="{{ route('sejarah') }}">Sejarah</a></li>
+                        <li><a class="{{ Request::is('vision') ? 'active' : '' }}" href="{{ route('vision') }}">Visi Dan Misi</a></li>
+                        <li><a class="{{ Request::is('struktur-organisasi') ? 'active' : '' }}"href="{{ route('struktur_organisasi') }}">Struktur Organisasi</a></li>
+                        <li><a class="{{ Request::is('sambutanks') ? 'active' : '' }}"href="{{ route('sambutanks') }}">SambutanKepala Sekolah</a></li>
+                        <li><a class="{{ Request::is('staff') ? 'active' : '' }}"href="{{ route('staff') }}">Pengajar</a></li>
+                        
+                        
+                       
                     </ul>
                 </li>
 

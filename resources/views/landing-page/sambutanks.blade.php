@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section('title', 'Sambutan Kepala Sekolah | SDN Kebonagung')
+@section('title', 'Sambutan Kepala Sekolah | SDN 02 Pagojengan')
 
 @section('content')
     <main id="main" data-aos="fade-in">
@@ -25,7 +25,7 @@
                     <!-- Foto Kepala Sekolah -->
                     <div class="col-lg-5">
                         <div class="text-center">
-                            <img src="{{ asset('assets/img/Nur Fiatun.jpeg') }}" class="img-fluid rounded-circle shadow"
+                            <img src="{{ asset('assets/img/Juriyah, S.Pd.png') }}" class="img-fluid rounded-circle shadow"
                                 alt="Kepala Sekolah"
                                 style="width: 280px; height: 280px; object-fit: cover; border: 8px solid #fff;">
 

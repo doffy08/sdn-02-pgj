@@ -32,7 +32,7 @@
                     <!-- Foto Kepala Sekolah -->
                     <div class="col-lg-5">
                         <div class="text-center">
-                            <img src="{{ asset('assets/img/Nur Fiatun.jpeg') }}" class="img-fluid rounded-circle shadow"
+                            <img src="{{ asset('assets/img/Juriyah, S.Pd.png') }}" class="img-fluid rounded-circle shadow"
                                 alt="Kepala Sekolah"
                                 style="width: 280px; height: 280px; object-fit: cover; border: 8px solid #fff;">
 
@@ -99,20 +99,17 @@
                         <h3 class="mb-4">Visi & Misi Sekolah</h3>
                         <h5><b>Visi Sekolah</b></h5>
                         <p class="fst-italic">
-                            ”Sekolah dapat membawa generasi mampu menguasai iptek dan imtek”
+                            ”Unggul Dalam Prestasi, Teruji Dalam Keimanan, Ketaqwaan Dan Berakhlak Mulia”
                         </p>
 
                         <h5><b>Misi Sekolah</b></h5>
                         <ul>
-                            <li><i class="bi bi-check-circle"></i> Melaksanakan pembelajaran serta bimbingan secara efektif
-                                kepada siswa sesuai potensi masing - masing.</li>
-                            <li><i class="bi bi-check-circle"></i> Mendorong pada setiap siswa untuk mengenali potensi
-                                dirinya, sehingga dapat di kembangkan secara optimal.</li>
-                            <li><i class="bi bi-check-circle"></i> Menumbuhkan semangat penghayatan terhadap ilmu
-                                pengetahuan, ajaran agama dan juga budaya bangsa sehingga menjadi sumber kearifan dalam
-                                bertindak</li>
-                            <li><i class="bi bi-check-circle"></i> Menerapkan manajemen yang transparan dengan melibatkan
-                                seluruh warga sekolah dan pihak terkait.</li>
+                            <li><i class="bi bi-check-circle"></i> Menanamkan Pendidikan Dasar Agama Islam Yang Yakin Dan Mantap.</li>
+                            <li><i class="bi bi-check-circle"></i> Membiasakan Berperilaku Yang Baik Dan Berakhlak Mulia.</li>
+                            <li><i class="bi bi-check-circle"></i> Meningkatkan Mutu Pendidikan Sesuai Dengan Tuntutan Masyarakat Dan Perkembangan Ilmu Pengetahuan Dan Teknologi (IPTEK).</li>
+                            <li><i class="bi bi-check-circle"></i> Mengembangkan Kemampuan Berpikir Logis, Kritis, Dan Kreatif.</li>
+                            <li><i class="bi bi-check-circle"></i> Menumbuhkan Sikap Toleran, Tanggung Jawab, Kemandirian Dan Percakapan Emosional.</li>
+                            <li><i class="bi bi-check-circle"></i> Membentuk Rasa Cinta Kepada Bangsa Dan Tanah Air Indonesia.</li>
                         </ul>
 
                     </div>

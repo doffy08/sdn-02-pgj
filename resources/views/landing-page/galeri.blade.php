@@ -9,7 +9,7 @@
 
     <section id="breadcrumbs" class="breadcrumbs">
   <div class="container">
-    <h2>Fasilitas Sekolah</h2>
+    <h2>Galeri</h2>
   </div>
 </section><!-- End Breadcrumbs -->
 
@@ -18,8 +18,8 @@
   <div class="container" data-aos="fade-up">
 
     <div class="section-title">
-      <h2>Fasilitas Sekolah</h2>
-      <p>Berbagai fasilitas unggulan yang mendukung proses belajar mengajar siswa kami</p>
+      <h2>Galeri</h2>
+      <p>Dokumentasi Aktivitas Kegiatan SDN 02 Pagojengan. </p>
     </div>
 
     <div class="row gy-4">
