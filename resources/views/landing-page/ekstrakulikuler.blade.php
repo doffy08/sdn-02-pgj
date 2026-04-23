@@ -55,7 +55,7 @@
             
             <!-- Gambar -->
             <div class="position-relative">
-                <img src="{{ asset('assets/img/Senam pagi.jpeg') }}" 
+                <img src="{{ asset('assets/img/seni tari-3.jpeg') }}" 
                      class="card-img-top img-fluid" 
                      alt="Aman"
                      style="height: 320px; object-fit: cover;">
@@ -63,9 +63,9 @@
 
             <!-- Body Card -->
             <div class="card-body text-center p-4">
-              <h5 class="card-title fw-bold text-dark mb-3">Senam Pagi</h5>
+              <h5 class="card-title fw-bold text-dark mb-3">Seni Tari</h5>
                 <p class="card-text text-muted">
-                 Senam pagi adalah aktivitas fisik ringan yang dilakukan pada pagi hari untuk menjaga kebugaran, meningkatkan kesehatan, dan menyegarkan tubuh serta pikiran sebelum beraktivitas.
+                 Seni tari adalah cabang seni yang menggunakan gerakan tubuh manusia yang ritmis, indah, dan simbolis sebagai media ekspresi jiwa, perasaan, pikiran, atau cerita. Tari memadukan unsur raga (gerak), irama (musik/iringan), dan rasa (penjiwaan) untuk menciptakan daya pesona dan makna mendalam.
                 </p>
             </div>
 
@@ -78,7 +78,7 @@
             
             <!-- Gambar -->
             <div class="position-relative">
-                <img src="{{ asset('assets/img/Karnaval.jpeg') }}" 
+                <img src="{{ asset('assets/img/nyanyi.jpg') }}" 
                      class="card-img-top img-fluid" 
                      alt="Aman"
                      style="height: 320px; object-fit: cover;">
@@ -86,38 +86,16 @@
 
             <!-- Body Card -->
             <div class="card-body text-center p-4">
-              <h5 class="card-title fw-bold text-dark mb-3">Seni</h5>
+              <h5 class="card-title fw-bold text-dark mb-3">Menyanyi</h5>
                 <p class="card-text text-muted">
-                  
+                  Ekstrakurikuler menyanyi (vokal/paduan suara) adalah kegiatan sekolah untuk mengembangkan bakat seni suara, teknik vokal, pernapasan, dan intonasi, serta meningkatkan rasa percaya diri. Aktivitas ini meliputi latihan menyanyi solo, vokal grup, hingga paduan suara, serta seringkali mencakup pengenalan lagu nasional dan daerah.
                 </p>
             </div>
 
           </div>
         </div>
  {{-- End Card --}}
- {{-- Card --}}
-        <div class="col-lg-6 col-md-6" data-aos="fade-up">
-          <div class="card h-100 border-0 shadow-sm overflow-hidden">
-            
-            <!-- Gambar -->
-            <div class="position-relative">
-                <img src="{{ asset('assets/img/outbond.jpeg') }}" 
-                     class="card-img-top img-fluid" 
-                     alt="Aman"
-                     style="height: 320px; object-fit: cover;">
-            </div>
-
-            <!-- Body Card -->
-            <div class="card-body text-center p-4">
-              <h5 class="card-title fw-bold text-dark mb-3">Outbond</h5>
-                <p class="card-text text-muted">
-                  Selain menjadi UKS Ruangan ini juga digunakan untuk kegiatan Belajar Mengajar kelas 6
-                </p>
-            </div>
-
-          </div>
-        </div>
- {{-- End Card --}}
+ 
     </div>
 
   </div>

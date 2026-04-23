@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section('title', 'Sejarah | SDN Kebonagung')
+@section('title', 'Sejarah | SDN 02 Pagojengan')
 
 @section('content')
     <main id="main" data-aos="fade-in">

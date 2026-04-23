@@ -30,7 +30,7 @@
             
             <!-- Gambar -->
             <div class="position-relative">
-                <img src="{{ asset('assets/img/perpustakaan.jpg') }}" 
+                <img src="{{ asset('assets/img/hallal bi hallal-2.jpeg') }}" 
                      class="card-img-top img-fluid" 
                      alt="Aman"
                      style="height: 320px; object-fit: cover;">
@@ -38,9 +38,9 @@
 
             <!-- Body Card -->
             <div class="card-body text-center p-4">
-              <h5 class="card-title fw-bold text-dark mb-3">Perpustakaan</h5>
+              <h5 class="card-title fw-bold text-dark mb-3">Hallal bi Hallal </h5>
                 <p class="card-text text-muted">
-                   Perpustakaan berfungsi sebagai pusat informasi, pendidikan, penelitian, pelestarian budaya, dan rekreasi untuk meningkatkan kecerdasan bangsa.
+                   Pada hari pertama tepatnya pada tanggal 30 Maret Para Siswa dan Guru mengadakan acara Hallal bi Hallal.
                 </p>
             </div>
 
@@ -56,7 +56,7 @@
             
             <!-- Gambar -->
             <div class="position-relative">
-                <img src="{{ asset('assets/img/uks.jpg') }}" 
+                <img src="{{ asset('assets/img/Pramuka.jpeg') }}" 
                      class="card-img-top img-fluid" 
                      alt="Aman"
                      style="height: 320px; object-fit: cover;">
@@ -64,9 +64,9 @@
 
             <!-- Body Card -->
             <div class="card-body text-center p-4">
-              <h5 class="card-title fw-bold text-dark mb-3">UKS</h5>
+              <h5 class="card-title fw-bold text-dark mb-3">Pelantikan & Pengukuhan Golongan Siaga dan Penggalang</h5>
                 <p class="card-text text-muted">
-                  Selain menjadi UKS Ruangan ini juga digunakan untuk kegiatan Belajar Mengajar kelas 6
+                  Pengukuhan atau pelantikan Siaga dan Penggalang adalah upacara formal kenaikan tingkat atau perpindahan golongan (misal: Siaga ke Penggalang) yang menandai peningkatan kecakapan, tanggung jawab, dan kode kehormatan (Dwi Satya/Darma ke Tri Satya/Dasa Darma). Prosesi ini wajib dilakukan secara khidmat, diikuti penandatanganan buku SKU, dan seringkali melibatkan orang tua sebagai tanda dukungan.
                 </p>
             </div>
 
@@ -79,7 +79,7 @@
             
             <!-- Gambar -->
             <div class="position-relative">
-                <img src="{{ asset('assets/img/ruang tunggu tamu.jpg') }}" 
+                <img src="{{ asset('assets/img/hallal bi hallal-2.jpeg') }}" 
                      class="card-img-top img-fluid" 
                      alt="Aman"
                      style="height: 320px; object-fit: cover;">
