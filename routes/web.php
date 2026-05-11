@@ -87,3 +87,17 @@ Route::controller(StudentController::class)->middleware('auth')->group(function 
     Route::put('/dashboard/student/edit/{student:nis}', 'update')->name('student.update');
     Route::delete('/dashboard/student/delete/{student:nis}', 'destroy')->name('student.delete');
 });
+
+use Illuminate\Support\Facades\Password;
+
+Route::get('/forgot-password', function () {
+    return view('auth.forgot-password');
+})->name('password.request');
+
+Route::post('/forgot-password', function (Request $request) {
+    $request->validate(['email' => 'required|email']);
+    $status = Password::sendResetLink($request->only('email'));
+    return $status === Password::RESET_LINK_SENT
+        ? back()->with('status', 'Link reset password sudah dikirim ke email kamu!')
+        : back()->withErrors(['email' => __($status)]);
+})->name('password.email');

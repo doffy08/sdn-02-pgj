@@ -7,13 +7,16 @@ use Illuminate\Database\Eloquent\Collection;
 use App\Models\Staff;
 use App\Models\Post;
 use App\Models\Prestasi;
+use App\Models\Student;
 
 class HomeController extends Controller
 {
     public function index()
     {
         return view('landing-page.home', [
-            'posts' => Post::latest()->paginate(3)
+            'posts' => Post::latest()->paginate(3),
+            'pengajar' => Staff::count(),
+            'siswa' => Student::count(),
         ]);
     }
 

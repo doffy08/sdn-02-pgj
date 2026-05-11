@@ -117,6 +117,32 @@
           </div>
         </div>
  {{-- End Card --}}
+ {{-- Card --}}
+        <div class="col-lg-6 col-md-6" data-aos="fade-up">
+          <div class="card h-100 border-0 shadow-sm overflow-hidden">
+            
+            <!-- Gambar -->
+            <div class="position-relative">
+                <img src="{{ asset('assets/img/Wc Guru.jpg') }}" 
+                     class="card-img-top img-fluid" 
+                     alt="Aman"
+                     style="height: 320px; object-fit: cover;">
+            </div>
+
+            <!-- Body Card -->
+            <div class="card-body text-center p-4">
+              <h5 class="card-title fw-bold text-dark mb-3">Wc Sekolah</h5>
+                <p class="card-text text-muted">
+                   Wc untuk Karyawan
+                   .
+                </p>
+            </div>
+
+            
+
+          </div>
+        </div>
+ {{-- End Card --}}
     </div>
 
   </div>

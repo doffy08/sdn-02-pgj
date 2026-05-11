@@ -93,11 +93,14 @@
                 <div class="col-lg-12 col-md-12 col-12 col-sm-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Data Siswa</h4>
+                            <h4>Data Akademik Sekolah</h4>
                         </div>
                         <div class="card-body">
-                            <canvas id="analisis_data" height="182"></canvas>
-                            <div class="statistic-details mt-sm-4">
+                            {{-- <canvas id="analisis_data" height="182"></canvas> --}}
+                             <div>
+                        <canvas id="myChart"></canvas>
+                        </div>
+                            {{-- <div class="statistic-details mt-sm-4">
                                 <div class="statistic-details-item">
                                     <span class="text-muted"><span class="text-primary"><i
                                                 class="fas fa-caret-up"></i></span> 7%</span>
@@ -121,7 +124,7 @@
                                                 class="fas fa-caret-up"></i></span> 19%</span>
                                     <div class="detail-value">$92,142</div>
                                     <div class="detail-name">This Year's Sales</div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -132,56 +135,37 @@
 @endsection
 
 @section('js-libraries')
-    <script src="{{ asset('node_modules/chart.js/dist/Chart.min.js') }}"></script>
+    {{-- <script src="{{ asset('node_modules/chart.js/dist/Chart.min.js') }}"></script> --}}
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="{{ asset('node_modules/jqvmap/dist/jquery.vmap.min.js') }}"></script>
     <script src="{{ asset('node_modules/jqvmap/dist/maps/jquery.vmap.world.js') }}"></script>
 @endsection
 
 @section('script')
-    <script>
-        (async function() {
-            const data = [{
-                    year: 2010,
-                    count: 10
-                },
-                {
-                    year: 2011,
-                    count: 20
-                },
-                {
-                    year: 2012,
-                    count: 15
-                },
-                {
-                    year: 2013,
-                    count: 25
-                },
-                {
-                    year: 2014,
-                    count: 22
-                },
-                {
-                    year: 2015,
-                    count: 30
-                },
-                {
-                    year: 2016,
-                    count: 28
-                },
-            ];
+  
 
-            new Chart(
-                document.getElementById('analisis-data'), {
-                    type: 'bar',
-                    data: {
-                        labels: data.map(row => row.year),
-                        datasets: [{
-                            label: 'Acquisitions by year',
-                            data: data.map(row => row.count)
-                        }]
-                    }
-                }
-            );
-        })();
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Siswa', 'Pengajar', 'Kelas', 'Artikel', 'Prestasi'],
+      datasets: [{
+        label: 'Data',
+        data: [{{ $siswa }}, {{ $pengajar }}, 6, {{ $artikel }}, {{ $prestasi }}],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
 @endsection

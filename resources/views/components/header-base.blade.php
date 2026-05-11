@@ -70,11 +70,11 @@
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
-
-        @auth
-            <a href="{{ route('dashboard') }}" class="get-started-btn">Dashboard</a>
-            {{-- @else
-        <a href="{{ route('login') }}" class="get-started-btn">Login</a> --}}
-        @endauth
+        
+        {{-- @auth
+        <a href="{{ route('dashboard') }}" class="get-started-btn">Dashboard</a>
+        @else
+        <a href="{{ route('login') }}" class="get-started-btn">Login</a>
+        @endauth --}}
     </div>
 </header>
