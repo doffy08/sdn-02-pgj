@@ -152,10 +152,10 @@
   new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ['Siswa', 'Pengajar', 'Kelas', 'Artikel', 'Prestasi'],
+      labels: ['Siswa', 'Pengajar', 'Kelas', 'Artikel', 'Prestasi', 'Galeri'],
       datasets: [{
         label: 'Data',
-        data: [{{ $siswa }}, {{ $pengajar }}, 6, {{ $artikel }}, {{ $prestasi }}],
+        data: [{{ $siswa }}, {{ $pengajar }}, 6, {{ $artikel }}, {{ $prestasi }}, {{ $galeri }}],
         borderWidth: 1
       }]
     },

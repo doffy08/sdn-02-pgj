@@ -29,6 +29,10 @@
                         Siswa
                     </span></a>
             </li>
+            <li class="{{ Request::is('dashboard/galeri') ? 'active' : '' }}">
+                <a href="{{ route('galeri.index') }}" class="nav-link"><i class="fas fa-images"></i>
+                    <span>Galeri</span></a>
+            </li>
         </ul>
 
         <div class="mt-4 mb-4 p-3 hide-sidebar-mini">

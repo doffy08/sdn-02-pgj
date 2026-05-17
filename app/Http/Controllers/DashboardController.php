@@ -6,6 +6,7 @@ use App\Models\Post;
 use App\Models\Prestasi;
 use App\Models\Staff;
 use App\Models\Student;
+use App\Models\Galeri;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -16,7 +17,8 @@ class DashboardController extends Controller
             'pengajar' => Staff::count(),
             'artikel' => Post::count(),
             'siswa' => Student::count(),
-            'prestasi' => Prestasi::count()
+            'prestasi' => Prestasi::count(),
+            'galeri' => Galeri::count()
         ]);
     }
 }

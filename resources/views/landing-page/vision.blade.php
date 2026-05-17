@@ -45,12 +45,12 @@
             <div class="row counters">
 
             <div class="col-lg-4 col-6 text-center">
-                <span data-purecounter-start="0" data-purecounter-end="171" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="{{ $siswa }}" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Siswa</p>
             </div>
 
             <div class="col-lg-4 col-6 text-center">
-                <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="{{ $pengajar }}" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Tenaga Pengajar</p>
             </div>
 

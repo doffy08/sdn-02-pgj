@@ -7,6 +7,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Category;
+use App\Http\Controllers\GaleriController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\PrestasiController;
 use App\Http\Controllers\StaffController;
@@ -87,6 +88,16 @@ Route::controller(StudentController::class)->middleware('auth')->group(function 
     Route::put('/dashboard/student/edit/{student:nis}', 'update')->name('student.update');
     Route::delete('/dashboard/student/delete/{student:nis}', 'destroy')->name('student.delete');
 });
+
+Route::controller(GaleriController::class)->middleware('auth')->group(function () {
+    Route::get('/dashboard/galeri', 'index')->name('galeri.index');
+    Route::get('/dashboard/galeri/create', 'create')->name('galeri.create');
+    Route::get('/dashboard/galeri/edit/{galeri}', 'edit')->name('galeri.edit');
+    Route::post('/dashboard/galeri', 'store')->name('galeri.store');
+    Route::put('/dashboard/galeri/edit/{galeri}', 'update')->name('galeri.update');
+    Route::delete('/dashboard/galeri/delete/{galeri}', 'destroy')->name('galeri.delete');
+});
+
 
 use Illuminate\Support\Facades\Password;
 

@@ -8,6 +8,7 @@ use App\Models\Staff;
 use App\Models\Post;
 use App\Models\Prestasi;
 use App\Models\Student;
+use App\Models\Galeri;
 
 class HomeController extends Controller
 {
@@ -44,7 +45,11 @@ class HomeController extends Controller
 
     public function vision()
     {
-        return view('landing-page.vision');
+        return view('landing-page.vision', [
+            'pengajar' => Staff::count(),
+            'siswa' => Student::count(),
+        ]);
+        
     }
 
 
@@ -73,7 +78,9 @@ class HomeController extends Controller
     }
     public function galeri()
     {
-        return view('landing-page.galeri');
+          return view('landing-page.galeri', [
+            'galeris' => Galeri::latest()->get()
+        ]);
     }
 
     public function sambutanks()
